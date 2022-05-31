@@ -6,6 +6,8 @@ const path = require("path");
 
 const app = express();
 
+require("dotenv").config();
+
 //middleware
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -28,7 +30,7 @@ app.post("/suscribe", (req, res) => {
   const url = "https://us14.api.mailchimp.com/3.0/lists/d4bbc95c1e";
   const options = {
     method: "POST",
-    auth: "mhdev:4c93b9d49bd2e2d2cfe8f83e586521f0-us14",
+    auth: process.env.MC_API_KEY,
   };
 
   if (email) {
