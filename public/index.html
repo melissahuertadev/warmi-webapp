@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" 
+      type="image/png" 
+      href="./images/warmi.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Sofia&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="css/styles.css" />
+  
+  <title>Warmi</title>
+</head>
+
+<body>
+  <div class="circle"></div>
+  <section id="title" class="red-background">
+    <div class="container-fluid">
+      <!-- Nav Bar -->
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">Warmi</a>
+      </nav>
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6" id="signup">
+          <h1 class="big-heading">A warm and safe space for <em>warmis</em></h1>
+          <div class="home-newsletter">
+            <form>
+                <h4>Suscribe to stay in the latest news</h4>
+                <div class="input-group">
+                  <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                  <span class="input-group-btn">
+                    <button type="submit" class="btn btn-theme" id="cta">Subscribe</button>
+                  </span>
+                </div>
+                <p class="error" id="error">Please enter your email</p>
+            </form>
+          </div>
+        </div>
+        <div class="col-lg-6 hidden" id="success">
+          <h1 class="big-heading">Check your email</h1>
+          <div class="home-newsletter">
+            <h4>We sent you an email, please confirm your susbcription.</h4>
+          </div>
+        </div>
+
+        <div class="col-lg-6 col-title-image">
+          <img class="title-image" src="images/warmi.png" alt="warmi-icon">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="red-background">
+    <div class="row">
+      <p class="col-lg-8 footer-copy"><span>Warmi</span> © Copyright 2022 | Made with ❤️ in Perú by <a
+        href="https://melissahuerta.dev" target="_blank">Melissa Huerta Dev</a></p>
+      <div class="col-lg-4 footer-socials bottom">
+        <a href="https://twitter.com/melihuertam" target="_blank"><i class="fa-brands fa-twitter social-icon"></i></a>
+        <a href="https://instagram.com/melissahuerta.dev" target="_blank"><i class="fa-brands fa-instagram social-icon"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script src="error.js"></script>
+</body>
+</html>
