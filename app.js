@@ -30,7 +30,7 @@ app.post("/suscribe", (req, res) => {
   const url = "https://us14.api.mailchimp.com/3.0/lists/d4bbc95c1e";
   const options = {
     method: "POST",
-    auth: process.env.MC_API_KEY,
+    auth: process.env.MC_API_KEY
   };
 
   if (email) {
