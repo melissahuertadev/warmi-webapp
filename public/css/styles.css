@@ -44,6 +44,10 @@ a:hover {
     color: var(--warmi-blue);
 }
 
+.hidden {
+    display: none;
+}
+
 /* Headings */
 .big-heading {
     font-size: 3.25rem;
@@ -149,6 +153,48 @@ a:hover {
     position: relative;
     font-size: 0;
     white-space: nowrap;
+}
+
+.error {
+    display: none;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--warmi-yellow);
+    font-size: 0.85rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+}
+
+.fadeout {
+    animation: fadeout 1s forwards;
+}
+
+.fadein {
+    animation: fadein 1s forwards;
+ 
+}
+
+@keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadein {
+    0% {
+        display: block;
+        opacity: 0;
+    }
+    1% {
+        display: block;
+        opacity: 0;
+    }
+    100% {
+        display: block;
+        opacity: 1;
+    }
 }
 
 /* Image */
