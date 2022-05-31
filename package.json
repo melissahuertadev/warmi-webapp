@@ -5,6 +5,7 @@
   "description": "mobile app for women's landing page",
   "main": "main.js",
   "scripts": {
+    "start": "node app.js",
     "deploy": "gh-pages -d .",
     "serve": "node app",
     "dev": "nodemon app"
